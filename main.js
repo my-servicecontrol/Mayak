@@ -177,7 +177,7 @@ function tasksTable(data) {
 var fil = [];
 function myFunction() {
   fil.length = 0;
-  var input, filter, table, tr, td, td1, td2, td3, td4, td5, td6, i;
+  var input, filter, table, tr, td, td1, td2, td3, td4, td5, td6, td7, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
@@ -511,7 +511,7 @@ function newOrder() {
 <div class="row">
 <div class="col-6">
 <label for="client" class="form-label">Клиент</label>
-<input id="client" name="client" class="form-control form-control-sm" type="text" value="" onchange="" list="character7">
+<input id="client" name="client" class="form-control form-control-sm" type="text" value="" onchange="option()" list="character7">
 <datalist id="character7">${opcClient}</datalist></div>
 <div class="col-6 ms-auto">
 <label for="phone" class="form-label">Тел. клиента</label>
@@ -540,7 +540,7 @@ function editOrder(dadata) {
   <div><p style="text-align: right;">%<strong> &nbsp; &nbsp; &nbsp; ${dadata[30].v}: &nbsp; &nbsp; &nbsp; ${dadata[29].v} грн.&nbsp; &nbsp;</strong></p></div>`;
   });
 
-  const data = dadata[36].v == undefined ? "заказ пуст" : dadata[36].v;
+  const data = dadata[36].v == undefined ? "немає замовлення" : dadata[36].v;
   const rows = data.split(",");
   const tableBody = document.getElementById("table-body");
 
