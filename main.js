@@ -1,5 +1,5 @@
 var myApp =
-  "https://script.google.com/macros/s/AKfycbwx2MdGBmNSltJJRQnz3DpQVL9wmykflkar1FTjwCQXKtj3_XtmF6WNZcsDTtEQ0p_s/exec";
+  "https://script.google.com/macros/s/AKfycbyo_JgHOU9rtmxjL7a5xuAFa8-EW23rYPF4E-k_VHiK1HxDFj4arZ8Qgwg37jfwCyDS/exec";
 var tasks = "1YURrJOrj9hj3Sc1Jdt9BPv6-iPfWIemJj8JtbBIGfkw";
 var sName = "Mayak Carwash";
 //var eDate = "Активно до: 18.08.2024";
