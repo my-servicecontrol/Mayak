@@ -1,5 +1,5 @@
 var myApp =
-  "https://script.google.com/macros/s/AKfycbyo_JgHOU9rtmxjL7a5xuAFa8-EW23rYPF4E-k_VHiK1HxDFj4arZ8Qgwg37jfwCyDS/exec";
+  "https://script.google.com/macros/s/AKfycbw6tkOflngw5wp9XH1iz77APgcYoiWg_okf_zlrTMT69gCdCpszBuUyGGvG4T9s8K-Q/exec";
 var tasks = "1YURrJOrj9hj3Sc1Jdt9BPv6-iPfWIemJj8JtbBIGfkw";
 var sName = "Mayak Carwash";
 //var eDate = "Активно до: 18.08.2024";
@@ -534,7 +534,7 @@ function editOrder(dadata) {
   });
 
   const data = dadata[36].v == undefined ? "немає замовлення" : dadata[36].v;
-  const rows = data.split(",");
+  const rows = data.split("--");
   const tableBody = document.getElementById("table-body");
 
   rows.forEach((row, index) => {
